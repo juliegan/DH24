@@ -17,7 +17,7 @@
             text-align: center;
         }
         img {
-            width: 150px; /* Adjust the size of the logo */
+            width: 150px; 
             height: auto;
             margin-bottom: 35px;
         }
@@ -27,6 +27,7 @@
             border: 1px solid #f4e2ff;;
             border-radius: 4px;
             font-size: 16px;
+            margin-top: 70px;
         }
         button {
             padding: 10px 15px;
@@ -40,6 +41,11 @@
         button:hover {
             background-color: #218838;
         }
+        p {
+            font-size: 18px;
+            color: #2c165f;
+            margin-top: 70px; 
+        }
     </style>
 </head>
 <body>
@@ -49,6 +55,8 @@
         <h1>UW Chat Student Guide</h1>
         <input type="text" id="searchQuery" placeholder="Type your search here...">
         <button onclick="performSearch()">Search</button>
+        
+        <p>Search any keyword to find relevant UW information!</p>
     </div>
 
     <script>
@@ -56,7 +64,7 @@
             const query = document.getElementById('searchQuery').value;
             if (query) {
                 alert(`Searching for: ${query}`);
-                // Here you can implement the search functionality, e.g., redirecting to a search results page
+                // Possibly implement the search functionality here -> connect to mongodb and react
             } else {
                 alert('Please enter a search term.');
             }
@@ -64,4 +72,3 @@
     </script>
 
 </body>
-</html>
