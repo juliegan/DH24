@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - UW Chat Student Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="search-container">
+        <img src="paw-logo.png" alt="UW Paw Logo">
+        <h1>Search Results</h1>
+        <div id="search-results"></div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get('q');
+        const resultsContainer = document.getElementById('search-results');
+
+        if (query) {
+            resultsContainer.innerHTML = `<p>Showing results for: <strong>${query}</strong></p>`;
+            //implement search logic from mongoDb/react
+        } else {
+            resultsContainer.innerHTML = `<p>No search query found!</p>`;
+        }
+    </script>
+
+</body>
+</html>
