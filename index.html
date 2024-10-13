@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UW Chat Student Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 50px;
+        }
+        .search-container {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #9c7aee;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <h1>UW Chat Student Guide</h1>
+        <input type="text" id="searchQuery" placeholder="Type your search here...">
+        <button onclick="performSearch()">Search</button>
+    </div>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById('searchQuery').value;
+            if (query) {
+                alert(`Searching for: ${query}`);
+                // Here you can implement the search functionality, e.g., redirecting to a search results page
+            } else {
+                alert('Please enter a search term.');
+            }
+        }
+    </script>
+
+</body>
+</html>
