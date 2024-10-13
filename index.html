@@ -16,6 +16,11 @@
             margin: auto;
             text-align: center;
         }
+        img {
+            width: 100px; /* Adjust the size of the logo */
+            height: auto;
+            margin-bottom: 20px;
+        }
         input[type="text"] {
             width: 80%;
             padding: 10px;
@@ -40,6 +45,7 @@
 <body>
 
     <div class="search-container">
+        <img src="paw-logo.png" alt="UW Paw Logo"> <!-- Added image -->
         <h1>UW Chat Student Guide</h1>
         <input type="text" id="searchQuery" placeholder="Type your search here...">
         <button onclick="performSearch()">Search</button>
